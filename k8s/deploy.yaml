@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: practiceapp
+  labels:
+    app: practiceapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: practiceapp
+  template:
+    metadata:
+      labels:
+        app: practiceapp
+    spec:
+      containers:
+      - name: practiceapp
+        image: prachponleuuch/practiceapp:v1
+        ports:
+        - containerPort: 1111
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi

@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: practiceapp
+spec:
+  rules:
+  - host: practiceapp.alex.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: practiceapp
+            port:
+              number: 1111
