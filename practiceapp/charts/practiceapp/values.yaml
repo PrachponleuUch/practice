@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: prachponleuuch/practiceapp
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "cf0374"
 imagePullSecrets: []
 nameOverride: ""
