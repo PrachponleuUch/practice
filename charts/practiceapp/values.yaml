@@ -29,14 +29,6 @@ ingress:
           pathType: Prefix
   tls: []
 resources: {}
-livenessProbe:
-  httpGet:
-    path: /api/v1/health
-    port: http
-readinessProbe:
-  httpGet:
-    path: /api/v1/health
-    port: http
 autoscaling:
   enabled: false
   minReplicas: 1
