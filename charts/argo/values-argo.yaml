@@ -14,7 +14,7 @@ applicationSet:
   replicas: 1
 
 global:
-  domain: argocd.alex.com
+  domain: argocd.ppu.com
 
 certificate:
   enabled: true

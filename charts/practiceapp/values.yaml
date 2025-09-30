@@ -1,8 +1,8 @@
 replicaCount: 1
 image:
   repository: prachponleuuch/practiceapp
-  pullPolicy: Always
-  tag: "cf0374"
+  pullPolicy: IfNotPresent
+  tag: "v1"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -17,13 +17,13 @@ podSecurityContext: {}
 securityContext: {}
 service:
   type: ClusterIP
-  port: 1111
+  port: 5000
 ingress:
   enabled: true
   className: "nginx"
   annotations: {}
   hosts:
-    - host: practiceapp.alex.com
+    - host: practiceapp.ppu.com
       paths:
         - path: /
           pathType: Prefix

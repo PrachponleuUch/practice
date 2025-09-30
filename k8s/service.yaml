@@ -8,6 +8,6 @@ spec:
     app: practiceapp
   ports:
     - protocol: TCP
-      port: 1111
-      targetPort: 1111
+      port: 5000
+      targetPort: 5000
       

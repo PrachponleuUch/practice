@@ -4,7 +4,7 @@ metadata:
   name: practiceapp
 spec:
   rules:
-  - host: practiceapp.alex.com
+  - host: practiceapp.ppu.com
     http:
       paths:
       - path: /
@@ -13,4 +13,4 @@ spec:
           service:
             name: practiceapp
             port:
-              number: 1111
+              number: 5000
