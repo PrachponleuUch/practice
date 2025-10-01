@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: practiceapp
-        image: prachponleuuch/practiceapp:1
+        image: prachponleuuch/practiceapp:v1
         ports:
         - containerPort: 5000
